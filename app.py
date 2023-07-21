@@ -5,7 +5,7 @@ app = Flask("__main__", template_folder="/opt/render/project/src/templates", sta
 logging.basicConfig(level=logging.DEBUG)
 
 
-@app.route("/saanvi_17")
+@app.route("/shi.spill.the.tea")
 def saanvi_17():
     return render_template("home.html")
 
@@ -27,7 +27,7 @@ def run_insta_code():
         return redirect("https://ngl.onrender.com/saanvi_17")
 
 
-@app.route("/saanvi_17", methods=["POST", "GET"])
+@app.route("/shi.spill.the.tea", methods=["POST", "GET"])
 def run_ngl_code():
     if request.method == "POST":
         print(request.form)
