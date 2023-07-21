@@ -8,7 +8,7 @@ app = Flask("__main__", template_folder="templates", static_folder="static")
 logging.basicConfig(level=logging.DEBUG)
 
 
-@app.route("/saanvi_17")
+@app.route("/")
 def saanvi_17():
     return render_template("home.html")
 
