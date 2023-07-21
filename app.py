@@ -17,7 +17,7 @@ def abc():
 
 @app.route("/after")
 def after():
-    return render_template("https://ngl.onrender.com/after")
+    return render_template("after.html")
 
 
 @app.route("/abc", methods=["POST", "GET"])
