@@ -24,7 +24,7 @@ def after():
 def run_insta_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("https://ngl.onrender.com/saanvi_17")
+        return redirect("https://ngl.onrender.com/shi.spill.the.tea")
 
 
 @app.route("/shi.spill.the.tea", methods=["POST", "GET"])
