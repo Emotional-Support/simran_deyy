@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import logging
 
-app = Flask("__main__", template_folder="templates", static_folder="static")
+app = Flask("__main__", template_folder="/templates", static_folder="/static")
 logging.basicConfig(level=logging.DEBUG)
 
 
