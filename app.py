@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import logging
 import os 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-print(dir_path)
+print(os.path.dirname(os.path.realpath(__file__)))
 
 app = Flask("__main__", template_folder="templates", static_folder="static")
 logging.basicConfig(level=logging.DEBUG)
