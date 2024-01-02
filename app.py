@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 @app.route("/")
 def redirect_main():
-    redirect("http://127.0.0.1:5000/login")
+    return redirect("http://127.0.0.1:5000/login")
 
 
 @app.route("/login")
