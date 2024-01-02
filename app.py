@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, redirect
 import logging
+import os
 
 app = Flask("__main__", template_folder="templates", static_folder="static")
 logging.basicConfig(level=logging.DEBUG)
-
+print(os.path)
 
 @app.route("/")
 def redirect_main():
